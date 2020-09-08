@@ -1,6 +1,14 @@
 package com.br.recordenglish.recordenglish.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Phrase {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String englishPhrase;
     private String portuguesePhrase;
